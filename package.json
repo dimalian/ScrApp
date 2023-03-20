@@ -2,7 +2,7 @@
     "name": "unique-service",
     "version": "1.0.0",
     "author": "Iryna Lian",
-    "main": "index.js",
+    "main": "index.ts",
     "jest": {
         "testEnvironment": "node"
     },
