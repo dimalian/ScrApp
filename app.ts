@@ -2,6 +2,7 @@
 import express from 'express';
 import { errors } from 'celebrate';
 import bodyParser from 'body-parser';
+import authorize from './middleware/authorize';
 
 // middleware
 import { notFound, unexpected } from './middleware/error-handler';
@@ -13,6 +14,7 @@ process.on('unhandledRejection', (reason: Error, promise) => {
 
 const app = express();
 app.use(bodyParser.json());
+app.use(authorize);
 
 routes(app);
 
