@@ -6,6 +6,9 @@
     "jest": {
         "testEnvironment": "node"
     },
+    "engines": {
+        "node": "18.x"
+    },
     "scripts": {
         "build": "npx tsc",
         "debug": "node --inspect=0.0.0.0 -r ts-node/register ./index.ts",
